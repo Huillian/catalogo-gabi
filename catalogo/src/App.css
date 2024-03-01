@@ -24,7 +24,7 @@
 }
 
 .cont-bd {
-  background-image: url("src/assets/iphone/background.png");
+  background-image: url("public/iphone/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

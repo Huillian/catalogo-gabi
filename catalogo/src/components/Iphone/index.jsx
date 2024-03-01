@@ -48,7 +48,7 @@ function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valor
               <div className="col-4 ">
                 <div className=""><img src={fotoAtual} alt="Imagem do iPhone" class=" img-size-phone-1"  /></div>
                 <div className="col">
-                  <img class='col img-size-garantia-1' src="src/assets/iphone/garantia1.png" alt="" />
+                  <img class='col img-size-garantia-1' src="public/iphone/garantia1.png" alt="" />
 
                 </div>
               </div>
