@@ -1,0 +1,21 @@
+.bg1{
+    background-color: #14140F;
+  }
+  .bg2{
+    background-color: #053D38;
+  }
+  .bg3{
+    background-color: #34675C;
+  }
+  .bg4{
+    background-color: #A3CCAB;
+  }
+  .bg5{
+    background-color: #F26800;
+  }
+
+.cont-bd {
+    border: 2px solid #FF2878; /* Cor azul como exemplo */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px;
+  }
