@@ -24,6 +24,10 @@
 }
 
 .cont-bd {
+  background-image: url("src/assets/iphone/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border: 2px solid #FF2878; /* Cor azul como exemplo */
   border-radius: 10px; /* Borda arredondada */
   padding: 0px;
@@ -67,4 +71,96 @@
 
 .bg-cont{
   background-color: #FF2878;
+}
+
+
+
+
+/* teste */
+.img-size-phone-1{
+  height: 12rem;
+  margin-left: 0.3rem;
+}
+.text-spec-test{
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.bg-cont-1{
+  background-color: #FF2878;
+  border-radius: 10px; /* Borda arredondada */
+
+}
+
+.center-desk-style{
+  margin-top: 1rem;
+}
+
+.img-size-garantia-1{
+  height: 2rem;
+  
+  background-color: none;
+}
+
+.badge-garantia{
+  margin-left: -2rem;
+  margin-top: 4rem;
+  color: none;
+}
+
+.btn-invalid{
+  background-color: #e5e5e5;
+  text-decoration: line-through;
+  color: red;
+  
+}
+.btn-valid{
+  border-radius: 10px;
+  border-color: #FF2878;
+  background-color: white;
+  
+}
+
+/* Estilos para as cores disponíveis */
+.cores-disponiveis li {
+  width: 1.2rem; /* largura */
+  height: 1.2rem; /* altura */
+  border-radius: 50%; /* borda arredondada */
+  cursor: pointer; /* Define o cursor como um ponteiro */
+
+  /* Outras propriedades de estilo */
+}
+
+/* Estilo para a cor ativa */
+.cores-disponiveis li.active {
+  border: 2px solid #FF2878;
+  
+   /* Exemplo: azul */
+  /* Outros estilos desejados para a cor ativa */
+}
+
+/* Estilos para as cores individuais */
+.cor-preto {
+  background-color: #4a4c4e;
+}
+
+
+.cor-rosa {
+  background-color: #eb9594;
+}
+
+.cor-azul {
+  background-color: #a0cee7;
+}
+
+.cor-verde {
+  background-color: #1bb107;
+}
+
+.cor-amarelo {
+  background-color: #fbff00;
+}
+
+.text-cor {
+  font-size: 0.7rem;
 }
