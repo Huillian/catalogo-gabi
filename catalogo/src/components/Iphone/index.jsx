@@ -28,7 +28,7 @@ import React, { useState } from 'react';
 
 
 
-function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valorAVista, preto, rosa, azul, verde, amarelo }) { 
+function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valorAVista, preto, rosa, azul, verde, amarelo, capacidade1, capacidade2 ,capacidade3 }) { 
 
      // Estado para armazenar a URL da foto atual
      const [fotoAtual, setFotoAtual] = useState(foto);
@@ -41,14 +41,14 @@ function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valor
 
 
     return(
-        <section className="styles.card ">
+        <section className="styles.card mt-2">
        
           <div className="container cont-bd">
             <div className="row align-items-center">
               <div className="col-4 ">
                 <div className=""><img src={fotoAtual} alt="Imagem do iPhone" class=" img-size-phone-1"  /></div>
                 <div className="col">
-                  <img class='col img-size-garantia-1' src="public/iphone/garantia1.png" alt="" />
+                  <img class='col img-size-garantia-1' src="/assets/iphone/garantia1.png" alt="" />
 
                 </div>
               </div>
@@ -59,9 +59,9 @@ function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valor
                   <p className="capacity-text my-1 mt-0 mb-2">CAPACIDADE</p>
                 
                 <div class="col-10  btn-group" role="group" aria-label="Armazenamento">
-                  <button type="button" class="btn btn-valid  text-spec-test " data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Disponivel">138GB</button>
-                  <button type="button" class="btn btn-valid text-spec-test">256GB</button>
-                  <button type="button" class="btn btn-invalid disabled  text-spec-test">512GB</button>
+                  <button type="button" class="btn btn-valid  text-spec-test " data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Disponivel">{capacidade1}</button>
+                  <button type="button" class="btn btn-valid text-spec-test">{capacidade2}</button>
+                  <button type="button" class="btn btn-invalid disabled  text-spec-test">{capacidade3}</button>
                 </div>
                 <hr class="col-5 my-2" />
                 </div>  

@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0.3rem;
   text-align: center;
+  background-color: #262a2f;
 }
 
 /* Iphone-card.css */
@@ -24,7 +25,7 @@
 }
 
 .cont-bd {
-  background-image: url("public/iphone/background.png");
+  background-image: url("/assets/iphone/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

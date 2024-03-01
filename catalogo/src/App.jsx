@@ -1,6 +1,7 @@
 import './App.css'
 import Iphonecard from './components/Iphone'
 
+
 function App() {
 
   return (
@@ -8,26 +9,86 @@ function App() {
       <Iphonecard
         nome="iPhone 15"
 
-        foto="public/iphone/iphone-preto.png"
+        foto="/assets/iphone/iphone-preto.png"
 
         //cores disponiveis : preto, rosa, azul, verde e amarelo.
         //Só sera exibido na tela contanto que seja definida a string abaixo
         //Deixarei comentado, só precisa remover o // para adicionar o elemento
-        preto="public/iphone/iphone-preto.png"
-        rosa="public/iphone/iphone-rosa.png"
-        azul="public/iphone/iphone-azul.png" 
-        // verde="public/iphone/iphone-verde.png"
-        // amarelo="public/iphone/iphone-amarelo.png"
+        preto="/assets/iphone/iphone-preto.png"
+        rosa="/assets/iphone/iphone-rosa.png"
+        azul="/assets/iphone/iphone-azul.png" 
+        verde="/assets/iphone/iphone-verde.png"
+        // amarelo="/assets/iphone/iphone-amarelo.png"
 
+      
+        //capacidade
+        capacidade1='11gb'
+        capacidade2='11'
+        capacidade3='11'
 
 
 
         parcela="99"
-        valorDestacado="999"
+        valorDestacado="111"
         valorQuebrado="99"
         valorAVista="9.999,99"
       />
       
+      <Iphonecard
+        nome="iPhone 15"
+
+        foto="/assets/iphone/iphone-preto.png"
+
+        //cores disponiveis : preto, rosa, azul, verde e amarelo.
+        //Só sera exibido na tela contanto que seja definida a string abaixo
+        //Deixarei comentado, só precisa remover o // para adicionar o elemento
+        preto="/assets/iphone/iphone-preto.png"
+        rosa="/assets/iphone/iphone-rosa.png"
+        azul="/assets/iphone/iphone-azul.png" 
+        verde="/assets/iphone/iphone-verde.png"
+        // amarelo="/assets/iphone/iphone-amarelo.png"
+
+      
+        //capacidade
+        capacidade1='11gb'
+        capacidade2='11'
+        capacidade3='11'
+
+
+
+        parcela="99"
+        valorDestacado="111"
+        valorQuebrado="99"
+        valorAVista="9.999,99"
+      />
+
+<Iphonecard
+        nome="iPhone 15"
+
+        foto="/assets/iphone/iphone-preto.png"
+
+        //cores disponiveis : preto, rosa, azul, verde e amarelo.
+        //Só sera exibido na tela contanto que seja definida a string abaixo
+        //Deixarei comentado, só precisa remover o // para adicionar o elemento
+        preto="/assets/iphone/iphone-preto.png"
+        rosa="/assets/iphone/iphone-rosa.png"
+        azul="/assets/iphone/iphone-azul.png" 
+        verde="/assets/iphone/iphone-verde.png"
+        // amarelo="/assets/iphone/iphone-amarelo.png"
+
+      
+        //capacidade
+        capacidade1='11gb'
+        capacidade2='11'
+        capacidade3='11'
+
+
+
+        parcela="99"
+        valorDestacado="111"
+        valorQuebrado="99"
+        valorAVista="9.999,99"
+      />
       
     </>
     
