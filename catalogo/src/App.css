@@ -1,11 +1,12 @@
 #root {
   font-family: 'Montserrat', monospace;
-  max-width: 1280px;
+  max-width: auto;
   margin: 0 auto;
   padding: 0.3rem;
   text-align: center;
-  background-color: #262a2f;
+
 }
+
 
 /* Iphone-card.css */
 .bg1{
@@ -164,4 +165,86 @@
 
 .text-cor {
   font-size: 0.7rem;
+}
+
+
+/* MACBOOK */
+.img-size-garantia-mac{
+  height: 1.5rem;
+  background-color: none;
+  
+}
+.text_mac_tittle{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-left: 1.2rem;
+}
+
+.mac-image{
+  height: 8rem;
+}
+
+.capacidade-mac-text{
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+.btn-capacity{
+  font-size: 0.5rem;
+  border-radius: 0px;
+  
+
+}
+
+/* Estilos para as cores disponíveis */
+.cores-disponiveis-mac li {
+  width: 0.5rem; /* largura */
+  height: 0.5rem; /* altura */
+  border-radius: 50%; /* borda arredondada */
+  cursor: pointer; /* Define o cursor como um ponteiro */
+
+  /* Outras propriedades de estilo */
+}
+
+/* Estilo para a cor ativa */
+.cores-disponiveis li.active {
+  border: 2px solid #FF2878;
+  
+   /* Exemplo: azul */
+  /* Outros estilos desejados para a cor ativa */
+}
+
+/* Estilos para as cores individuais */
+.cor-preto {
+  background-color: #4a4c4e;
+}
+
+
+
+.cor-rosa {
+  background-color: #eb9594;
+}
+
+.cor-azul {
+  background-color: #a0cee7;
+}
+
+.cor-verde {
+  background-color: #1bb107;
+}
+
+.cor-amarelo {
+  background-color: #fbff00;
+}
+
+.chip-text{
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+.chip-image{
+  height: 0.5rem;
+  width: 0.5rem;
 }

@@ -28,7 +28,7 @@ import React, { useState } from 'react';
 
 
 
-function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valorAVista, preto, rosa, azul, verde, amarelo, capacidade1, capacidade2 ,capacidade3 }) { 
+function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valorAVista, preto, rosa, azul, verde, amarelo, capacidade1, capacidade2 ,capacidade3, m2, m3 }) { 
 
      // Estado para armazenar a URL da foto atual
      const [fotoAtual, setFotoAtual] = useState(foto);
