@@ -13,13 +13,12 @@ window.addEventListener('scroll', function() {
                 title.style.fontSize = '90pt'; // Tamanho maior para dispositivos maiores que 853px
             }
         } else { // Se for uma tela pequena (como dispositivos móveis)
-            title.style.fontSize = '48pt'; // Mantém o tamanho da fonte inalterado
         }
         if (window.innerWidth <= 853) { // Verifica se é uma tela grande
             if (scrollPosition > (titleOffsetTop - windowHeight * 0.75)) { // Atrasa o início do efeito de scroll
-                title.style.fontSize = '24pt'; // Tamanho menor para dispositivos maiores que 853px
+                title.style.fontSize = '20pt'; // Tamanho menor para dispositivos maiores que 853px
             } else {
-                title.style.fontSize = '28pt'; // Tamanho maior para dispositivos maiores que 853px
+                title.style.fontSize = '30pt'; // Tamanho maior para dispositivos maiores que 853px
             }
         } else { // Se for uma tela pequena (como dispositivos móveis)
             title.style.fontSize = '48pt'; // Mantém o tamanho da fonte inalterado
@@ -57,23 +56,23 @@ function AppleWatch({  nome, foto, parcela41, valorDestacado41, valorQuebrado41,
                 <img className='watch' src={fotoAtual} alt="AppleWatch" />
             </div>
             <div className="row mt-3">
-                <div className="col text-start sub-text">MIDNIGHT</div>
+                <div className="col text-start sub-text">{corAtiva}</div>
                 <div className="col text-end disponibilidade-text">Disponibilidade</div>
             </div>
             <div className="row">
                 <div className="col">
                     <ul className="cores-disponiveis-mac d-flex list-unstyled mt-2">
                         {midnight && (
-                            <li className={`cor-midnight me-1  ${corAtiva === "cor-midnight" ? "active" : ""}`} onClick={() => trocarFoto(midnight, "midnight")}></li>
+                            <li className={`cor-midnight me-1  ${corAtiva === "cor-midnight" ? "active" : ""}`} onClick={() => trocarFoto(midnight, "MIDNIGHT")}></li>
                         )}  
                         {silver && (
-                            <li className={`cor-silver me-1 ${corAtiva === "cor-silver" ? "active" : ""}`} onClick={() => trocarFoto(silver, "silver")}></li>
+                            <li className={`cor-silver me-1 ${corAtiva === "cor-silver" ? "active" : ""}`} onClick={() => trocarFoto(silver, "SILVER")}></li>
                         )}  
                         {spacegray && (
-                            <li className={`cor-spacegray me-1  ${corAtiva === "cor-spacegray" ? "active" : ""}`} onClick={() => trocarFoto(spacegray, "spacegray")}></li>
+                            <li className={`cor-spacegray me-1  ${corAtiva === "cor-spacegray" ? "active" : ""}`} onClick={() => trocarFoto(spacegray, "SPACEGRAY")}></li>
                         )}  
                         {starlight && (
-                            <li className={`cor-starlight me-1  ${corAtiva === "cor-starlight" ? "active" : ""}`} onClick={() => trocarFoto(starlight, "starlight")}></li>
+                            <li className={`cor-starlight me-1  ${corAtiva === "cor-starlight" ? "active" : ""}`} onClick={() => trocarFoto(starlight, "STARLIGHT")}></li>
                         )}   
                                                 
                     </ul>

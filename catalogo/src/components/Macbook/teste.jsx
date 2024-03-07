@@ -49,23 +49,23 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                 <img className='macbook' src={fotoAtual} alt="" />
             </div>
             <div className="row mt-3">
-                <div className="col text-start sub-text">MIDNIGHT</div>
+                <div className="col text-start sub-text">{corAtiva}</div>
                 <div className="col text-end disponibilidade-text">Disponibilidade</div>
             </div>
             <div className="row">
                 <div className="col">
                     <ul className="cores-disponiveis-mac d-flex list-unstyled mt-2">
                         {midnight && (
-                            <li className={`cor-midnight me-1  ${corAtiva === "cor-midnight" ? "active" : ""}`} onClick={() => trocarFoto(midnight, "midnight")}></li>
+                            <li className={`cor-midnight me-1  ${corAtiva === "cor-midnight" ? "active" : ""}`} onClick={() => trocarFoto(midnight, "MIDNIGHT")}></li>
                         )}  
                         {silver && (
-                            <li className={`cor-silver me-1 ${corAtiva === "cor-silver" ? "active" : ""}`} onClick={() => trocarFoto(silver, "silver")}></li>
+                            <li className={`cor-silver me-1 ${corAtiva === "cor-silver" ? "active" : ""}`} onClick={() => trocarFoto(silver, "SILVER")}></li>
                         )}  
                         {spacegray && (
-                            <li className={`cor-spacegray me-1  ${corAtiva === "cor-spacegray" ? "active" : ""}`} onClick={() => trocarFoto(spacegray, "spacegray")}></li>
+                            <li className={`cor-spacegray me-1  ${corAtiva === "cor-spacegray" ? "active" : ""}`} onClick={() => trocarFoto(spacegray, "SPACEGRAY")}></li>
                         )}  
                         {starlight && (
-                            <li className={`cor-starlight me-1  ${corAtiva === "cor-starlight" ? "active" : ""}`} onClick={() => trocarFoto(starlight, "starlight")}></li>
+                            <li className={`cor-starlight me-1  ${corAtiva === "cor-starlight" ? "active" : ""}`} onClick={() => trocarFoto(starlight, "STARLIGHT")}></li>
                         )}   
                                                 
                     </ul>
