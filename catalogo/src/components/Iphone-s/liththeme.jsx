@@ -30,7 +30,7 @@ function Iphonecard_test({ nome, foto, parcela,  valorDestacado, valorQuebrado, 
     };
 
 return(
-    <section className="styles.card ">
+    <section className="styles.card  ">
 <div className="container cont-bd">
             <div className="row align-items-center">
               <div className="col-4 ">
@@ -79,7 +79,7 @@ return(
 
                 <div className="container mb-3">
                   <div className="col ">
-                    <div className="row bg-cont justify-content-center gx-1 gy-3">
+                    <div className="row  justify-content-center gx-1 gy-3">
                       <p class='my-0 text-g' >{parcela}x R$<span class="valor-spec">{valorDestacado}</span>,{valorQuebrado}</p>
                       <p class='my-0 text-g'>ou R${valorAVista} a vista</p>
                     </div>

@@ -71,9 +71,6 @@
   height: 1.7rem;
 }
 
-.bg-cont{
-  background-color: #FF2878;
-}
 
 
 
@@ -378,6 +375,21 @@ hr {
   height: auto;
   padding-right: 14pt;
 }
+
+.iphone {
+  width: 60%;
+  height: auto;
+  filter: drop-shadow(5px 6pt 2pt #000000);
+}
+.btn-price{
+  border-color: #000;
+}
+.btn-price:hover{
+  border-color: #000;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5)
+
+}
+
   
 }
 

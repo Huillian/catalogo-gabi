@@ -17,12 +17,12 @@ window.addEventListener('scroll', function() {
         }
         if (window.innerWidth <= 853) { // Verifica se é uma tela grande
             if (scrollPosition > (titleOffsetTop - windowHeight * 0.75)) { // Atrasa o início do efeito de scroll
-                title.style.fontSize = '30pt'; // Tamanho menor para dispositivos maiores que 853px
+                title.style.fontSize = '37pt'; // Tamanho menor para dispositivos maiores que 853px
             } else {
-                title.style.fontSize = '40pt'; // Tamanho maior para dispositivos maiores que 853px
+                title.style.fontSize = '35pt'; // Tamanho maior para dispositivos maiores que 853px
             }
         } else { // Se for uma tela pequena (como dispositivos móveis)
-            title.style.fontSize = '48pt'; // Mantém o tamanho da fonte inalterado
+            title.style.fontSize = '38pt'; // Mantém o tamanho da fonte inalterado
         }
     });
 });
@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
 import React, { useState } from 'react';
 
 
-function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp }) {
+function IphoneLightTheme({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp }) {
     const [fotoAtual, setFotoAtual] = useState(foto);
     const [corAtiva, setCorAtiva] = useState("CORES");
     
@@ -46,7 +46,7 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                 <div className="col  page-title  text-center ">{nome}</div>
             </div>
             <div className="row justify-content-center">
-                <img className='macbook' src={fotoAtual} alt="" />
+                <img className='iphone' src={fotoAtual} alt="" />
             </div>
             <div className="row mt-3">
                 <div className="col text-start sub-text">{corAtiva}</div>
@@ -80,16 +80,13 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
             </div>
             <hr className='mt-0 mb-2' />
             <div className="row">
-                <div className="col selo">
+                <div className="col selo d-flex justify-content-center">
                     <div className="row">
                         <img className='col-2 img-apple ' src="/assets/apple/logo_black.svg" alt="" />
                         <span className='col text-start d-flex align-items-center'>Garantia<br />Apple 1 ano</span>
                     </div>
                 </div>
-                <div className="col chip text-end ">
-                    <img src={chipm2} alt="Chip M2" />
-                    <img src={chipm3} alt="Chip M3" />
-                </div>
+
             </div>
             <a href={wpp} type="button" class="btn btn-price btn-outline-light button-wpp mt-2 mb-2">
                 <p  class='my-0 text-g' >{parcela}x R$<span class="valor-spec">{valorDestacado}</span>,{valorQuebrado}</p>
@@ -101,4 +98,4 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
 
 
 
-export default Macbookcardteste;
+export default IphoneLightTheme;
