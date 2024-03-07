@@ -17,9 +17,9 @@ window.addEventListener('scroll', function() {
         }
         if (window.innerWidth <= 853) { // Verifica se é uma tela grande
             if (scrollPosition > (titleOffsetTop - windowHeight * 0.75)) { // Atrasa o início do efeito de scroll
-                title.style.fontSize = '30pt'; // Tamanho menor para dispositivos maiores que 853px
+                title.style.fontSize = '24pt'; // Tamanho menor para dispositivos maiores que 853px
             } else {
-                title.style.fontSize = '40pt'; // Tamanho maior para dispositivos maiores que 853px
+                title.style.fontSize = '28pt'; // Tamanho maior para dispositivos maiores que 853px
             }
         } else { // Se for uma tela pequena (como dispositivos móveis)
             title.style.fontSize = '48pt'; // Mantém o tamanho da fonte inalterado
@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
 import React, { useState } from 'react';
 
 
-function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp }) {
+function AppleWatch({  nome, foto, parcela41, valorDestacado41, valorQuebrado41, valorAVista41, parcela45, valorDestacado45, valorQuebrado45, valorAVista45, midnight, silver, spacegray, starlight,  dim41, dim45, wpp}) {
     const [fotoAtual, setFotoAtual] = useState(foto);
     const [corAtiva, setCorAtiva] = useState("midnight");
     
@@ -39,6 +39,14 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
         setFotoAtual(novaFoto);
         setCorAtiva(cor);
     };
+    
+    const [dim41Ativo, setDim41Ativo] = useState(true); // Define a dimensão 41mm como ativa inicialmente
+
+    const trocarDimensao = (dim41Atual) => {
+        setDim41Ativo(dim41Atual);
+    };
+    
+
 
     return (
         <div className="container border  mt-5">
@@ -46,7 +54,7 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                 <div className="col  page-title  text-center ">{nome}</div>
             </div>
             <div className="row justify-content-center">
-                <img className='macbook' src={fotoAtual} alt="" />
+                <img className='watch' src={fotoAtual} alt="AppleWatch" />
             </div>
             <div className="row mt-3">
                 <div className="col text-start sub-text">MIDNIGHT</div>
@@ -71,11 +79,12 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                     </ul>
                 </div>
                 <div className="col justify-content-end">
-                    <div class="btn-group cap-mobile" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary ">{capacidade1}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade2}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade3}</button>
-                    </div>
+                <div className="col chip text-end">
+                    <div></div>
+    <img src={dim41} alt="41mm" className={dim41Ativo ? 'dim41-active' : ''} onClick={() => trocarDimensao(true)} />
+    <img src={dim45} alt="45mm" className={dim41Ativo ? '' : 'dim45-active'} onClick={() => trocarDimensao(false)} />
+</div>
+
                 </div>
             </div>
             <hr className='mt-0 mb-2' />
@@ -86,19 +95,16 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                         <span className='col text-start d-flex align-items-center'>Garantia<br />Apple 1 ano</span>
                     </div>
                 </div>
-                <div className="col chip text-end ">
-                    <img src={chipm2} alt="Chip M2" />
-                    <img src={chipm3} alt="Chip M3" />
-                </div>
+                
             </div>
-            <a href={wpp} type="button" class="btn btn-outline-light button-wpp mt-2">
-                <p  class='my-0 text-g' >{parcela}x R$<span class="valor-spec">{valorDestacado}</span>,{valorQuebrado}</p>
-                <p  class='my-0 text-g'>ou R${valorAVista} a vista</p>
-            </a> 
+            <a href={wpp} type="button" className="btn btn-outline-light button-wpp mt-2">
+             <p className='my-0 text-g' dangerouslySetInnerHTML={{ __html: dim41Ativo ? `${parcela41}x R$<span class="valor-spec">${valorDestacado41}</span>,${valorQuebrado41}` : `${parcela45}x R$<span class="valor-spec">${valorDestacado45}</span>,${valorQuebrado45}` }}></p>
+             <p className='my-0 text-g'>ou {dim41Ativo ? `R$${valorAVista41}` : `R$${valorAVista45}`} a vista</p>
+            </a>
         </div>
     );
 }
 
 
 
-export default Macbookcardteste;
+export default AppleWatch;

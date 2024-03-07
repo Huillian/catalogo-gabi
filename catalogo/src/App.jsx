@@ -1,4 +1,5 @@
 import './App.css'
+import AppleWatch from './components/AppleWatch'
 import Iphonecard from './components/Iphone'
 import Macbookcard from './components/Macbook'
 import Macbookcardteste from './components/Macbook/teste'
@@ -77,7 +78,36 @@ function App() {
 
       />
         
-      <Iphonecard/>
+      <AppleWatch
+        nome="AppleWatch S9"
+        parcela="99"
+        valorDestacado="111"
+        valorQuebrado="99"
+        valorAVista="9.999,99"
+
+        foto="/assets/watch/s9-stainless-silver.jpeg"
+        midnight="/assets/watch/s9-stainless-silver.jpeg"
+        silver="/assets/watch/s9-stainless-graphite.jpeg"
+        starlight="/assets/watch/s9-stainless-gold.jpeg" 
+        
+
+        dim41="/assets/watch/watch-spec-dim-41.png" 
+        dim45="/assets/watch/watch-spec-dim-45.png" 
+
+        // Valores relacionados a 41mm
+        parcela41="15"
+        valorDestacado41="532"
+        valorQuebrado41="99"
+        valorAVista41="8.499"
+        
+          // Valores relacionados a 41mm
+          parcela45="29"
+          valorDestacado45="638"
+          valorQuebrado45="30"
+          valorAVista45="9.099"
+          
+      
+      />
     </>
     
   )
