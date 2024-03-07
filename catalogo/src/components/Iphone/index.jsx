@@ -63,7 +63,7 @@ function Iphonecard({ nome, foto, parcela,  valorDestacado, valorQuebrado, valor
                   <button type="button" class="btn btn-valid text-spec-test">{capacidade2}</button>
                   <button type="button" class="btn btn-invalid disabled  text-spec-test">{capacidade3}</button>
                 </div>
-                <hr class="col-5 my-2" />
+                <hr class="col-5 my-3" />
                 </div>  
                 
               

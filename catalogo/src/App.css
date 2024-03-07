@@ -169,82 +169,214 @@
 
 
 /* MACBOOK */
-.img-size-garantia-mac{
+.img-size-garantia-mac {
   height: 1.5rem;
-  background-color: none;
+}
+
+.text_mac_tittle {
+  font-size: 20pt;
+  font-weight: 600;
+
   
 }
-.text_mac_tittle{
-  font-size: 2.5rem;
-  font-weight: 600;
-  padding-left: 1.2rem;
+
+.mac-image-container {
+  overflow: hidden;
+  height: auto; /* Remove a altura fixa */
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
 }
 
-.mac-image{
-  height: 8rem;
+.mac-image {
+  width: 100%; /* Garante que a imagem cubra todo o contêiner */
+  height: auto; /* Ajusta automaticamente a altura de acordo com a largura */
 }
 
-.capacidade-mac-text{
+
+.capacidade-mac-text {
   font-size: 1rem;
   font-weight: 500;
-
 }
 
-.btn-capacity{
-  font-size: 0.5rem;
-  border-radius: 0px;
-  
-
+.btn-capacity {
+  font-size: 0.7rem; /* Ajustado para ser mais visível */
+  color: black  ;
+  border-radius: 0; /* Removido 'px' */
+  border-color: #FF2878;
+  background-color: white;  
 }
 
 /* Estilos para as cores disponíveis */
 .cores-disponiveis-mac li {
-  width: 0.5rem; /* largura */
-  height: 0.5rem; /* altura */
+  width: 17px; /* Ajustado para ser mais visível */
+  height: 17px; /* Ajustado para ser mais visível */
   border-radius: 50%; /* borda arredondada */
   cursor: pointer; /* Define o cursor como um ponteiro */
-
   /* Outras propriedades de estilo */
 }
 
 /* Estilo para a cor ativa */
-.cores-disponiveis li.active {
+.cores-disponiveis-mac li.active {
   border: 2px solid #FF2878;
-  
-   /* Exemplo: azul */
-  /* Outros estilos desejados para a cor ativa */
 }
 
 /* Estilos para as cores individuais */
-.cor-preto {
-  background-color: #4a4c4e;
+.text-color-mac {
+  font-size: 0.9rem; /* Ajustado para ser mais visível */
 }
 
-
-
-.cor-rosa {
-  background-color: #eb9594;
-}
-
-.cor-azul {
-  background-color: #a0cee7;
-}
-
-.cor-verde {
-  background-color: #1bb107;
-}
-
-.cor-amarelo {
-  background-color: #fbff00;
-}
-
-.chip-text{
-  font-size: 1rem;
+.chip-text {
+  font-size: 0.9rem; /* Ajustado para ser mais visível */
   font-weight: 500;
-
 }
 
-.chip-image{
-  height: 0.5rem;
-  width: 0.5rem;
+.chip-image {
+  height: auto; /* Ajustado para ser mais visível */
+  width: 100%; /* Ajustado para ser mais visível */
+  max-width: 51px;
+  padding: 0;
+  margin: 0;
+}
+
+
+hr {
+  padding: 0;
+  margin: 0;    
+}
+
+.imagem img{
+
+  width: 100%;
+  
+}
+
+.cor-name{
+
+  font-size: 12pt;
+  
+}
+
+.page-title {
+  font-size: 34pt; /* Tamanho maior */
+  transition: font-size 0.5s ease; /* Transição suave */
+}
+
+.page-title:hover {
+  font-size: 17pt; /* Tamanho menor */
+}
+
+@media screen and (min-width: 768px) {
+  .font-tittle {
+      font-size: 54pt;
+  
+  }
+}
+@media screen and (max-width: 428px) {
+ 
+  .border {
+    border-radius: 10pt;
+
+  }
+
+  .macbook {
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(0px 6pt 2pt #000000);
+  }
+  .sub-text{
+    font-size: 10pt; /* Tamanho menor */
+    color: #888;
+    padding-left: 25pt;
+  }
+  .cores-disponiveis-mac{
+    padding-left: 16pt;
+  }
+  .disponibilidade-text{
+    padding-right: 25pt;
+  }
+  .cap-mobile {
+    padding-right: 16pt;
+  }
+  .cap-mobile button{
+    font-size: 10pt;
+    color: black;
+    background-color: white;
+    border-color: white;
+    padding: 3pt;
+    padding-top: 1pt;
+    padding-bottom: 1pt;
+
+  }
+
+  .cap-mobile button:hover {
+    background-color: #D9D9D9; /* Defina a mesma cor de fundo como o estado normal */
+    border-color: #D9D9D9; /* Defina a mesma cor de borda como o estado normal */
+    color: black; /* Defina a mesma cor de texto como o estado normal */
+    box-shadow: none; /* Remova qualquer sombra */
+    transition: none; /* Remova qualquer transição */
+    text-decoration: none !important;
+}
+  .cap-mobile button:focus {
+    background-color: #D9D9D9 !important; /* Defina a mesma cor de fundo como o estado normal */
+    border-color: #D9D9D9 !important; /* Defina a mesma cor de borda como o estado normal */
+    color: black !important; /* Defina a mesma cor de texto como o estado normal */
+    box-shadow: none !important; /* Remova qualquer sombra */
+  }
+
+  .img-apple {
+    width: auto;
+    height: 20pt;
+    padding-right: 1pt;
+  }
+  .selo {
+    font-size: 7pt;
+    padding-left: 25pt;
+  }
+  .selo span{
+    font-size: 7pt;
+    padding-left: 1pt;
+    line-height: 1; /* Valor normalmente varia de 1 a 2 */
+
+  }
+  .chip {
+    padding-right: 28pt;
+  }
+  .chip img {
+    width: 20pt;
+    height: auto;
+    padding: 1pt;
+    
+  }
+  .button-wpp p{
+    color: black !important; 
+  }
+  .button-wpp {
+    
+    border-radius: 10pt;
+    padding-top: 1pt;
+    padding-bottom: 1pt;
+  }
+  
+}
+
+
+.disponibilidade-text{
+  font-size: 10pt; /* Tamanho menor */
+}
+
+.sub-text{
+  font-size: 10pt; /* Tamanho menor */
+  color: #888;
+}
+
+.cor-midnight {
+  background-color: #2f3740;
+}
+.cor-silver {
+  background-color: #e2e4e6;
+}
+.cor-spacegray {
+  background-color: #7d7e80;
+}
+.cor-starlight {
+  background-color: #efe5d2;
 }
