@@ -268,6 +268,7 @@ hr {
       font-size: 54pt;
   
   }
+
 }
 @media screen and (max-width: 428px) {
  
@@ -469,4 +470,33 @@ hr {
 }
 
   
+
+/* Estilos gerais da navbar */
+.navbar_mb {
+  background-color: #f8f9fa; /* Cor de fundo */
+  border-bottom: 1px solid rgba(0, 0, 0, .1); /* Borda inferior */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  
+}
+
+.navbar-toggler {
+  border: none; /* Remover borda do botão de alternância */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-left: 15px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para dispositivos maiores que 768 pixels */
+@media screen and (min-width: 768px) {
+  .navbar_mb {
+    display: none;
+  }
+}
 
