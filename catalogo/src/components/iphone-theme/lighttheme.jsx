@@ -1,36 +1,9 @@
-window.addEventListener('scroll', function() {
-    var titles = document.querySelectorAll('.page-title');
-    var scrollPosition = window.scrollY;
 
-    titles.forEach(function(title) {
-        var titleOffsetTop = title.offsetTop; // Obtém a posição superior do título
-        var windowHeight = window.innerHeight; // Obtém a altura da janela visível
-
-        if (window.innerWidth >= 853) { // Verifica se é uma tela grande
-            if (scrollPosition > (titleOffsetTop - windowHeight * 0.75)) { // Atrasa o início do efeito de scroll
-                title.style.fontSize = '76pt'; // Tamanho menor para dispositivos maiores que 853px
-            } else {
-                title.style.fontSize = '90pt'; // Tamanho maior para dispositivos maiores que 853px
-            }
-        } else { // Se for uma tela pequena (como dispositivos móveis)
-            title.style.fontSize = '48pt'; // Mantém o tamanho da fonte inalterado
-        }
-        if (window.innerWidth <= 853) { // Verifica se é uma tela grande
-            if (scrollPosition > (titleOffsetTop - windowHeight * 0.75)) { // Atrasa o início do efeito de scroll
-                title.style.fontSize = '37pt'; // Tamanho menor para dispositivos maiores que 853px
-            } else {
-                title.style.fontSize = '35pt'; // Tamanho maior para dispositivos maiores que 853px
-            }
-        } else { // Se for uma tela pequena (como dispositivos móveis)
-            title.style.fontSize = '38pt'; // Mantém o tamanho da fonte inalterado
-        }
-    });
-});
 
 import React, { useState } from 'react';
 
 
-function IphoneLightTheme({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp }) {
+function IphoneLightTheme({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp, disponivel1, disponivel2, disponivel3 }) {
     const [fotoAtual, setFotoAtual] = useState(foto);
     const [corAtiva, setCorAtiva] = useState("CORES");
     
@@ -72,16 +45,26 @@ function IphoneLightTheme({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                 </div>
                 <div className="col justify-content-end">
                     <div class="btn-group cap-mobile" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary ">{capacidade1}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade2}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade3}</button>
+                        <button type="button" className={`btn ${disponivel3 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade1}</button>
+                        <button type="button" className={`btn ${disponivel2 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade2}</button>
+                        <button type="button" className={`btn ${disponivel1 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade3}</button>
                     </div>
                 </div>
             </div>
             <hr className='mt-0 mb-2' />
             <div className="row">
                 <div className="col selo d-flex justify-content-center">
+                    <div className="row my-2">
+                        <div class="col-2 pulsating-circle"></div>
+
+                        <span className='col text-start d-flex align-items-center'>Disponivel</span>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col selo d-flex justify-content-center">
                     <div className="row">
+
                         <img className='col-2 img-apple ' src="/assets/apple/logo_black.svg" alt="" />
                         <span className='col text-start d-flex align-items-center'>Garantia<br />Apple 1 ano</span>
                     </div>

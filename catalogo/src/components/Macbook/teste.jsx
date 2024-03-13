@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
 import React, { useState } from 'react';
 
 
-function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp }) {
+function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVista, midnight, silver, spacegray, starlight, capacidade1, capacidade2, capacidade3, chipm2, chipm3, wpp, disponivel1 , disponivel2, disponivel3 }) {
     const [fotoAtual, setFotoAtual] = useState(foto);
     const [corAtiva, setCorAtiva] = useState("CORES");
     
@@ -72,9 +72,9 @@ function Macbookcardteste({ nome, foto, parcela, valorDestacado, valorQuebrado, 
                 </div>
                 <div className="col justify-content-end">
                     <div class="btn-group cap-mobile" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary ">{capacidade1}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade2}</button>
-                        <button type="button" class="btn btn-primary ">{capacidade3}</button>
+                        <button type="button" className={`btn ${disponivel3 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade1}</button>
+                        <button type="button" className={`btn ${disponivel2 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade2}</button>
+                        <button type="button" className={`btn ${disponivel1 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade3}</button>
                     </div>
                 </div>
             </div>

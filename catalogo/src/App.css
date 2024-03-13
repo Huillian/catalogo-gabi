@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0.3rem;
   text-align: center;
+  margin-top: 22pt;
 
 }
 
@@ -22,7 +23,7 @@
   background-color: #A3CCAB;
 }
 .bg5{
-  background-color: #F26800;
+  background-color: #00fc22;
 }
 
 .cont-bd {
@@ -390,6 +391,11 @@ hr {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5)
 
 }
+.ipad{
+  height: auto;
+  width: 60%;
+  
+}
 
   
 }
@@ -471,32 +477,97 @@ hr {
 
   
 
-/* Estilos gerais da navbar */
-.navbar_mb {
-  background-color: #f8f9fa; /* Cor de fundo */
-  border-bottom: 1px solid rgba(0, 0, 0, .1); /* Borda inferior */
-  padding: 10px; /* Espaçamento interno */
+/* Estilos para dispositivos maiores que 768 pixels */
+@media screen and (min-width: 768px) {
+
+  .iphone{
+    height: auto;
+    width: 300pt;
+    
+  }
+ 
 }
 
-.navbar-brand {
-  font-size: 1.5rem; /* Tamanho da fonte */
-  
+.bg-dark, .c{
+  background-color: rgba(0, 0, 0, 0.925) !important;
 }
 
 .navbar-toggler {
-  border: none; /* Remover borda do botão de alternância */
+  background-image: none;
+  border: none;
+  
+}
+.navbar-toggler:focus, .button-close:focus {
+  box-shadow: none;
+  outline: none;
+  color: white;
+  
 }
 
-.navbar-nav .nav-link {
-  font-size: 1.2rem; /* Tamanho da fonte */
-  color: #333; /* Cor do texto */
-  margin-left: 15px; /* Espaçamento entre os itens */
+.navbar .nav-link, .nav-link:hover{
+  color: white;
+  
 }
 
-/* Estilos para dispositivos maiores que 768 pixels */
-@media screen and (min-width: 768px) {
-  .navbar_mb {
+.offcanvas{
+  color: white;  
+  
+}
+.close {
+  color: #fff; 
+  opacity: 1;
+  
+}
+.nav-item {
+  position: relative;
+  font-size: 28px;
+
+}
+.nav-item ::before{
+  content: '';
+  position: absolute;
+  width:30%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+
+}
+.nav-item :hover::before{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+@media screen and (min-width: 990px) {  .navbar-toggler-icon {
     display: none;
+  }
+  .nav-item {
+    font-size: 16px;
+  
   }
 }
 
+
+.pulsating-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2bff00;
+  animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.8);
+      opacity: 0.7;
+  }
+  100% {
+      transform: scale(1.2);
+      opacity: 0;
+  }
+}
