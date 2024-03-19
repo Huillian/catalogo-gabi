@@ -60,7 +60,7 @@ function AppleWatch({  nome, foto, parcela41, valorDestacado41, valorQuebrado41,
                 <div className="col text-end disponibilidade-text">Disponibilidade</div>
             </div>
             <div className="row">
-                <div className="col">
+                <div className="col-6">
                     <ul className="cores-disponiveis-mac d-flex list-unstyled mt-2">
                         {midnight && (
                             <li className={`cor-midnight me-1  ${corAtiva === "cor-midnight" ? "active" : ""}`} onClick={() => trocarFoto(midnight, "MIDNIGHT")}></li>
@@ -77,14 +77,13 @@ function AppleWatch({  nome, foto, parcela41, valorDestacado41, valorQuebrado41,
                                                 
                     </ul>
                 </div>
-                <div className="col justify-content-end">
-                <div className="col chip text-end">
-                    <div></div>
-    <img src={dim41} alt="41mm" className={dim41Ativo ? 'dim41-active' : ''} onClick={() => trocarDimensao(true)} />
-    <img src={dim45} alt="45mm" className={dim41Ativo ? '' : 'dim45-active'} onClick={() => trocarDimensao(false)} />
-</div>
-
+                
+                <div className="col-6 chip d-flex justify-content-end text-end"> 
+                    <img src={dim41} id='dim1' alt="41mm" className={dim41Ativo ? 'dim41-active' : ''} onClick={() => trocarDimensao(true)} />
+                    <img src={dim45} id='dim2' alt="45mm" className={dim41Ativo ? '' : 'dim45-active'} onClick={() => trocarDimensao(false)} />
                 </div>
+
+                
             </div>
             <hr className='mt-0 mb-2' />
             <div className="row">

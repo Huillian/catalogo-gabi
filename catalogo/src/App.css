@@ -1,29 +1,37 @@
 #root {
-  font-family: 'Montserrat', monospace;
+  font-family: "Montserrat", monospace;
   max-width: auto;
   margin: 0 auto;
   padding: 0.3rem;
   text-align: center;
   margin-top: 22pt;
-
 }
-
 
 /* Iphone-card.css */
-.bg1{
-  background-color: #14140F;
+.bg1 {
+  background-color: #14140f;
 }
-.bg2{
-  background-color: #053D38;
+.bg2 {
+  background-color: #053d38;
 }
-.bg3{
-  background-color: #34675C;
+.bg3 {
+  background-color: #34675c;
 }
-.bg4{
-  background-color: #A3CCAB;
+.bg4 {
+  background-color: black;
 }
-.bg5{
-  background-color: #00fc22;
+.bg5 {
+  background-color: #ff629c;
+}
+.bg-gray {
+  background-color: #f5f5f7;
+}
+.bg-gray-100 {
+  background-color: #f8f9fa;
+  border-radius: 25px;
+  min-width: 500px;
+  width: 900px;
+  max-width: 900px;
 }
 
 .cont-bd {
@@ -31,94 +39,85 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 2px solid #FF2878; /* Cor azul como exemplo */
+  border: 2px solid #ff2878; /* Cor azul como exemplo */
   border-radius: 10px; /* Borda arredondada */
   padding: 0px;
 }
 
-.badge{
+.badge {
   font-size: 0.7rem;
   background-color: #00ff00;
   border-radius: 10px; /* Borda arredondada */
-
 }
 
-.img-size-phone{
+.img-size-phone {
   height: 270px;
 }
-.img-size-garantia{
+.img-size-garantia {
   height: 2rem;
   padding-left: 1rem;
   margin-top: 2rem;
 }
 
-.tittle{
+.tittle {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
-.text-spec{
+.text-spec {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.valor-spec{
- 
+.valor-spec {
   font-size: 1.6rem;
   font-weight: 800;
 }
-.text-g{
+.text-g {
   color: white;
   height: 1.7rem;
 }
 
-
-
-
-
 /* teste */
-.img-size-phone-1{
+.img-size-phone-1 {
   height: 12rem;
   margin-left: 0.3rem;
 }
-.text-spec-test{
+.text-spec-test {
   font-size: 0.7rem;
   font-weight: 400;
 }
 
-.bg-cont-1{
-  background-color: #FF2878;
+.bg-cont-1 {
+  background-color: #ff2878;
   border-radius: 10px; /* Borda arredondada */
-
 }
 
-.center-desk-style{
+.center-desk-style {
   margin-top: 1rem;
 }
 
-.img-size-garantia-1{
+.img-size-garantia-1 {
   height: 2rem;
-  
+
   background-color: none;
 }
 
-.badge-garantia{
+.badge-garantia {
   margin-left: -2rem;
   margin-top: 4rem;
   color: none;
 }
 
-.btn-invalid{
+.btn-invalid {
   background-color: #e5e5e5;
   text-decoration: line-through;
   color: red;
-  
 }
-.btn-valid{
+.btn-valid {
   border-radius: 10px;
-  border-color: #FF2878;
+  border-color: #ff2878;
   background-color: white;
-  
 }
 
 /* Estilos para as cores disponíveis */
@@ -133,9 +132,9 @@
 
 /* Estilo para a cor ativa */
 .cores-disponiveis li.active {
-  border: 2px solid #FF2878;
-  
-   /* Exemplo: azul */
+  border: 2px solid #ff2878;
+
+  /* Exemplo: azul */
   /* Outros estilos desejados para a cor ativa */
 }
 
@@ -143,7 +142,6 @@
 .cor-preto {
   background-color: #4a4c4e;
 }
-
 
 .cor-rosa {
   background-color: #eb9594;
@@ -165,7 +163,6 @@
   font-size: 0.7rem;
 }
 
-
 /* MACBOOK */
 .img-size-garantia-mac {
   height: 1.5rem;
@@ -174,8 +171,6 @@
 .text_mac_tittle {
   font-size: 20pt;
   font-weight: 600;
-
-  
 }
 
 .mac-image-container {
@@ -189,7 +184,6 @@
   height: auto; /* Ajusta automaticamente a altura de acordo com a largura */
 }
 
-
 .capacidade-mac-text {
   font-size: 1rem;
   font-weight: 500;
@@ -197,10 +191,10 @@
 
 .btn-capacity {
   font-size: 0.7rem; /* Ajustado para ser mais visível */
-  color: black  ;
+  color: black;
   border-radius: 0; /* Removido 'px' */
-  border-color: #FF2878;
-  background-color: white;  
+  border-color: #ff2878;
+  background-color: white;
 }
 
 /* Estilos para as cores disponíveis */
@@ -214,7 +208,7 @@
 
 /* Estilo para a cor ativa */
 .cores-disponiveis-mac li.active {
-  border: 2px solid #FF2878;
+  border: 2px solid #ff2878;
 }
 
 /* Estilos para as cores individuais */
@@ -235,48 +229,49 @@
   margin: 0;
 }
 
-
 hr {
   padding: 0;
-  margin: 0;    
+  margin: 0;
 }
 
-.imagem img{
-
+.imagem img {
   width: 100%;
-  
 }
 
-.cor-name{
-
+.cor-name {
   font-size: 12pt;
-  
 }
 
 .page-title {
   font-size: 34pt; /* Tamanho maior */
   transition: font-size 0.5s ease; /* Transição suave */
   letter-spacing: 1pt !important;
-
 }
 
 .page-title:hover {
   font-size: 17pt; /* Tamanho menor */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
+  /* desktop */
   .font-tittle {
-      font-size: 54pt;
-  
+    font-size: 54pt;
   }
-
+  font-tittle {
+    font-size: 54pt;
+  }
+  .img-apple {
+    width: auto;
+    height: 20pt;
+    padding-right: 1pt;
+  }
 }
-@media screen and (max-width: 428px) {
- 
+@media screen and (max-width: 800px) {
+  /* mobile */
+
   .border {
     border-radius: 10pt;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5)
-
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
   }
 
   .macbook {
@@ -284,21 +279,19 @@ hr {
     height: auto;
     filter: drop-shadow(0px 6pt 2pt #000000);
   }
-  .sub-text{
+  .sub-text {
     font-size: 10pt; /* Tamanho menor */
     color: #888;
     padding-left: 25pt;
   }
-  .cores-disponiveis-mac{
+  .cores-disponiveis-mac {
     padding-left: 16pt;
   }
-  .disponibilidade-text{
-    padding-right: 25pt;
-  }
+
   .cap-mobile {
-    padding-right: 16pt;
+    margin-top: -3;
   }
-  .cap-mobile button{
+  .cap-mobile button {
     font-size: 10pt;
     color: black;
     background-color: white;
@@ -306,20 +299,19 @@ hr {
     padding: 3pt;
     padding-top: 1pt;
     padding-bottom: 1pt;
-
   }
 
   .cap-mobile button:hover {
-    background-color: #D9D9D9; /* Defina a mesma cor de fundo como o estado normal */
-    border-color: #D9D9D9; /* Defina a mesma cor de borda como o estado normal */
+    background-color: #d9d9d9; /* Defina a mesma cor de fundo como o estado normal */
+    border-color: #d9d9d9; /* Defina a mesma cor de borda como o estado normal */
     color: black; /* Defina a mesma cor de texto como o estado normal */
     box-shadow: none; /* Remova qualquer sombra */
     transition: none; /* Remova qualquer transição */
     text-decoration: none !important;
-}
+  }
   .cap-mobile button:focus {
-    background-color: #D9D9D9 !important; /* Defina a mesma cor de fundo como o estado normal */
-    border-color: #D9D9D9 !important; /* Defina a mesma cor de borda como o estado normal */
+    background-color: #d9d9d9 !important; /* Defina a mesma cor de fundo como o estado normal */
+    border-color: #d9d9d9 !important; /* Defina a mesma cor de borda como o estado normal */
     color: black !important; /* Defina a mesma cor de texto como o estado normal */
     box-shadow: none !important; /* Remova qualquer sombra */
   }
@@ -333,28 +325,23 @@ hr {
     font-size: 7pt;
     padding-left: 25pt;
   }
-  .selo span{
+  .selo span {
     font-size: 7pt;
     padding-left: 1pt;
     line-height: 1; /* Valor normalmente varia de 1 a 2 */
-
   }
   .chip {
-    padding-right: 28pt;
     margin-top: -1pt;
-
   }
   .chip img {
     width: 24pt;
     height: auto;
     padding: 1pt;
-    
   }
-  .button-wpp p{
-    color: black !important; 
+  .button-wpp p {
+    color: black !important;
   }
   .button-wpp {
-    
     border-radius: 10pt;
     padding-top: 1pt;
     padding-bottom: 1pt;
@@ -370,42 +357,47 @@ hr {
     outline: 2px solid blue; /* Adiciona uma borda azul quando o item está ativo */
     /* ou */
     /* box-shadow: 0 0 5px 2px blue; */ /* Adiciona uma sombra azul quando o item está ativo */
+  }
+
+  .watch {
+    width: 90%;
+    height: auto;
+    padding-right: 14pt;
+  }
+
+  .iphone {
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(5px 6pt 2pt #000000);
+  }
+  .btn-price {
+    border-color: #000;
+  }
+  .btn-price:hover {
+    border-color: #000;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
+  .ipad {
+    height: auto;
+    width: 60%;
+  }
+  #dim1 {
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  #dim2 {
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
+  }
 }
 
-.watch {
-  width: 90%;
-  height: auto;
-  padding-right: 14pt;
-}
-
-.iphone {
-  width: 60%;
-  height: auto;
-  filter: drop-shadow(5px 6pt 2pt #000000);
-}
-.btn-price{
-  border-color: #000;
-}
-.btn-price:hover{
-  border-color: #000;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5)
-
-}
-.ipad{
-  height: auto;
-  width: 60%;
-  
-}
-
-  
-}
-
-
-.disponibilidade-text{
+.disponibilidade-text {
   font-size: 10pt; /* Tamanho menor */
 }
 
-.sub-text{
+.sub-text {
   font-size: 10pt; /* Tamanho menor */
   color: #888;
 }
@@ -423,18 +415,11 @@ hr {
   background-color: #efe5d2;
 }
 
-
-
 /* Estilo para quando o 45mm estiver ativo */
-
-
 
 /* Estilo para o gradiente */
 
-
 /* Keyframes para a animação do gradiente */
-
-
 
 .dim41-active {
   top: 0;
@@ -444,114 +429,122 @@ hr {
   z-index: -1;
   background: linear-gradient(0deg, #000, #272727);
 
-  background: linear-gradient(45deg, #0ad3ee, #0000ff, #0580d1,#3a0480, #04a8d1, #0f83f0, 
-  #0000ff, #190280,#20013d, #390147);  background-size: 400%;
+  background: linear-gradient(
+    45deg,
+    #0ad3ee,
+    #0000ff,
+    #0580d1,
+    #3a0480,
+    #04a8d1,
+    #0f83f0,
+    #0000ff,
+    #190280,
+    #20013d,
+    #390147
+  );
+  background-size: 400%;
   animation: rotateGradient 3s linear infinite; /* Animação do gradiente */
-  
 }
 .dim45-active {
-
-
   z-index: -1;
   background: linear-gradient(0deg, #000, #272727);
 
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-  #0000ff, #00ff00,#ffff00, #ff0000);  background-size: 400%;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
   animation: rotateGradient 10s linear infinite; /* Animação do gradiente */
-  
 }
 
 /* Keyframes para a animação do gradiente */
 @keyframes rotateGradient {
   0% {
-		background-position: 0 ;
-	}
-	50% {
-		background-position: 40% ;
- 
-	}
-	100% {
-		background-position: 0 0;
-	}
+    background-position: 0;
+  }
+  50% {
+    background-position: 40%;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-
-  
 
 /* Estilos para dispositivos maiores que 768 pixels */
 @media screen and (min-width: 768px) {
-
-  .iphone{
+  .iphone {
     height: auto;
     width: 300pt;
-    
   }
- 
 }
 
-.bg-dark, .c{
+.bg-dark,
+.c {
   background-color: rgba(0, 0, 0, 0.925) !important;
 }
 
 .navbar-toggler {
   background-image: none;
   border: none;
-  
 }
-.navbar-toggler:focus, .button-close:focus {
+.navbar-toggler:focus,
+.button-close:focus {
   box-shadow: none;
   outline: none;
   color: white;
-  
 }
 
-.navbar .nav-link, .nav-link:hover{
+.navbar .nav-link,
+.nav-link:hover {
   color: white;
-  
 }
 
-.offcanvas{
-  color: white;  
-  
+.offcanvas {
+  color: white;
 }
 .close {
-  color: #fff; 
+  color: #fff;
   opacity: 1;
-  
 }
 .nav-item {
   position: relative;
   font-size: 28px;
-
 }
-.nav-item ::before{
-  content: '';
+.nav-item ::before {
+  content: "";
   position: absolute;
-  width:30%;
+  width: 30%;
   height: 4px;
   border-radius: 4px;
-  background-color: #18272F;
+  background-color: #18272f;
   bottom: 0;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-
+  transition: transform 0.3s ease-in-out;
 }
-.nav-item :hover::before{
+.nav-item :hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
-
-@media screen and (min-width: 990px) {  .navbar-toggler-icon {
+@media screen and (min-width: 990px) {
+  .navbar-toggler-icon {
     display: none;
   }
   .nav-item {
     font-size: 16px;
-  
   }
 }
-
 
 .pulsating-circle {
   width: 20px;
@@ -563,11 +556,57 @@ hr {
 
 @keyframes pulse {
   0% {
-      transform: scale(0.8);
-      opacity: 0.7;
+    transform: scale(0.8);
+    opacity: 0.7;
   }
   100% {
-      transform: scale(1.2);
-      opacity: 0;
+    transform: scale(1.2);
+    opacity: 0;
   }
+}
+
+.cores-disponiveis-pc li {
+  width: 32pt; /* Ajustado para ser mais visível */
+  height: 32pt; /* Ajustado para ser mais visível */
+  border-radius: 50%; /* borda arredondada */
+  cursor: pointer; /* Define o cursor como um ponteiro */
+  /* Outras propriedades de estilo */
+}
+.cores-disponiveis-pc li:active {
+  outline: 2px solid blue; /* Adiciona uma borda azul quando o item está ativo */
+  /* ou */
+  /* box-shadow: 0 0 5px 2px blue; */ /* Adiciona uma sombra azul quando o item está ativo */
+}
+
+.pc-tittle-prod {
+  letter-spacing: 1pt !important;
+  font-size: 38pt;
+}
+.img-pc-iphone {
+  max-height: 600px;
+}
+
+.garantia {
+  border: none;
+  background-color: white !important;
+}
+.btn-price-pc {
+  border-color: #000;
+}
+.btn-price-pc:hover {
+  border-color: #000;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+.text-spec {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.valor-spec {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.text-g {
+  color: rgb(0, 0, 0);
+  height: 1.7rem;
 }

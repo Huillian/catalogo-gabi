@@ -76,7 +76,7 @@ function Ipadcard({ nome, foto, parcela, valorDestacado, valorQuebrado, valorAVi
                                                 
                     </ul>
                 </div>
-                <div className="col justify-content-end">
+                <div className="col d-flex justify-content-end">
                     <div class="btn-group cap-mobile" role="group" aria-label="Basic example">
                         <button type="button" className={`btn ${disponivel3 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade1}</button>
                         <button type="button" className={`btn ${disponivel2 === 'nao' ? 'text-decoration-line-through' : ''}`}>{capacidade2}</button>
