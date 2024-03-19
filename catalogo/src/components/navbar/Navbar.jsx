@@ -16,7 +16,7 @@ function Navbar({ handleFilter }) {
       <div className="container-fluid d-flex justify-content-between align-items-center bg4">
         <div className="navbar-brand d-flex align-items-center">
           <img
-            src="/public/assets/logo-gabi-bg.svg"
+            src="/assets/gabi/logo-gabi-bg.svg"
             alt="Logo"
             width="auto"
             height="35"
