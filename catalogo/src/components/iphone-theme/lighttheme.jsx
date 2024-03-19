@@ -296,7 +296,7 @@ function IphoneLightTheme({
                     >
                       <img
                         className=" justify-content-center"
-                        src="public/assets/iphone/garantia1.png"
+                        src="/public/assets/iphone/garantia1.png"
                         alt=""
                         width="130px"
                       />
